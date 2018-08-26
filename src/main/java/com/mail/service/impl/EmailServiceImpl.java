@@ -36,6 +36,7 @@ public class EmailServiceImpl implements EmailService {
             message.setText(mailBo.getText());
 
             mailRepository.save(mailBo);
+
             mailSender.send(message);
         }
     }
